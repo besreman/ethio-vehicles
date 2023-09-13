@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AboutMeActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="About us"
+                app:titleTextColor="@android:color/black"
+        />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+            android:id="@+id/aboutUsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:text=" ETHIO-VEHICLES \n\nEthio-vehicles is a market platform through which peoples can find any vehicles to buy throughout the country with ease of interaction to the mobile app. Our vision is to satisfy the need of the people, who want to get car or any other vehicle in time, quality and budget constraint of him/her. We strive for quality and easy marketing of vehicles in Ethiopia. You can contact with the following addresses:\nTelegram:@EthiopianVehicles  \nTel: +251-xxx-xxx-xxxx  \n\n See about the developer below"/>
+    <ImageView
+            android:id="@+id/myPic"
+            android:layout_height="100"
+            android:layout_width="100"
+            app:layout_constraintTop_toBottomOf="@+id/aboutUsText"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_margin="16dp"
+            android:src="@drawable/my_logo"
+            android:layout_marginTop="10dp"/>
+    <TextView
+     android:id="@+id/myStaticDataText"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginLeft="16dp"
+     android:layout_marginTop="8dp"
+     android:layout_marginRight="16dp"
+     app:layout_constraintTop_toBottomOf="@+id/myPic"
+     app:layout_constraintLeft_toLeftOf="parent"
+     app:layout_constraintRight_toRightOf="parent"
+     tools:text="Name: Minalu Mesele \nProfession: Software Engineer \nGithub: https://github.com/besreman \nApplication name: E-Vehicles \n\nCONTACT ME \nhttp://mminalu.me \nFacebook: minalu mesele \nTwitter: Minalu Mesele \nInstagram: Minalu Mesele \nTel: +251924972280 \nEmail: besratmesele@gmail.com"  />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
